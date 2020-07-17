@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>
+            Careers
+        </title>
+    </head>
+    <body>
+    <div id="cheader">
+    <a href="#">Careers</a>
+    </div>
+    <div class="main1">
+        <h2 style="font-weight: lighter;">JobOpportunities</h2>
+            <div class="search">
+                <label for="search1"><input type="text" id="search1"><span> </span><button>Search</button></label>
+            </div> 
+            <div >
+                <table > 
+                    <tr>
+                    <td>Job Type</td>
+                    <td>Posting Title</td>
+                    <td>Date Opened</td>    
+                    <td>City</td>
+                    <td> </td>
+                    </tr>
+                    
+                    <tr>
+                    <td>Full time</td>
+                    <td>Software Engineer Trainee</td>
+                    <td>01/21/2020</td>
+                    <td>Bengaluru</td>
+                    <td><button onclick="openFormTrainee()">Apply Now</button> </td>
+                    </tr>
+                     <tr>
+                    <td>Contract</td>
+                    <td>Software Engineering - Mentor</td>
+                    <td>05/01/2019</td>
+                    <td>Bengaluru</td>
+                    <td><button onclick="openFormMentor()">Apply Now</button> </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="myOverLay" class="overLay">
+                <span class="closebtn" onclick="closeFormTrainee()" title ="close overLay"> &#215</span>
+                <div class="wrap">
+                     <form>
+                    <p style="font-size: 150%;background-color: white; padding:0%">Applying for: Software Engineer Trainee</p>
+                    <hr/>
+                   
+                        <p>Basic Info</p>
+                        <label for="Firstname">Full Name: *<br/><input type="text"id="Firstname"></label><br><br>
+                         <label for="gender">Gender: *:</label><br>
+                                <select style="width:300px; height:30px" name="gender" id="gender">
+                                 <option value="none">None</option>
+                                     <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                     </select><br><br>
+                                     <label for="email">Email: *<br/><input type="text"id="email"></label><br><br>
+                                     <label for="phone">Phone: *<br/><input type="text"id="phone"></label><br><br>
+                                     <p>Address Information</p><br>
+                                      <label for="city">Current Location (City): *<br/><input type="text"id="city"></label><br><br>
+                                     <p>Professional Details</p><br>
+                                      <label for="emplyment">Employment Status: *</label><br>
+                                <select style="width:300px; height:30px" name="emplyment" id="emplyment">
+                                 <option value="none">None</option>
+                                     <option value="Employed">Employed</option>
+                                    <option value="UnEmployed">UnEmployed</option>
+                                    
+                                     </select><br><br>
+                                     <label for="linkedin">LinkedIn Profile Link:<br/><input type="text"id="linkedin"></label><br><br>
+                                     <label for="github">Github Profile:<br/><input type="text"id="github"></label><br><br>
+                                     <p>Other Info</p><br>
+                                <label for="find">How did you find out about the position?: *:</label><br>
+                                        <select style="width:300px; height:30px" name="find" id="find">
+                                            <option value="none">None</option>
+                                             <option value="Male">LinkedIn</option>
+                                            <option value="Female">Hasjob</option>
+                                             <option value="Female">eLitmus</option>
+                                              <option value="Female">Angel.Co</option>
+                                               <option value="Female">Facebook</option>
+                                                <option value="Female">Amcat</option>
+                                                 <option value="Female">Friend</option>
+                                             <option value="Other">Other</option>
+                                     </select><br><br>
+                         <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </form>
+                  
+                </div>
+            </div>
+            <script>
+                function openFormTrainee(){
+                    document.getElementById("myOverLay").style.display="block";
+                }
+            </script>
+
+            <script>
+            function closeFormTrainee(){
+                    document.getElementById("myOverLay").style.display="none";
+                }
+            </script>
+                 
+  
+    </div>
+
+
+    <!-- /* ======================================mentor Form =================================================== */ -->
+        <div id="myOverLay1" class="overLay1">
+                <span class="closebtn" onclick="closeFormMentor()" title ="close overLay"> &#215</span>
+                <div class="wrap">
+                     <form>
+                    <p style="font-size: 150%;background-color: white; padding:0%"> Applying for: Software Engineering - Mentor</p>
+                    <hr/>
+                   
+                        <p>Basic Info</p>
+                        <label for="Firstname">Full Name: *<br/><input type="text"id="Firstname"></label><br><br>
+                         <!-- <label for="gender">Gender: *:</label><br>
+                                <select style="width:300px; height:30px" name="gender" id="gender">
+                                 <option value="none">None</option>
+                                     <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                     </select><br><br> -->
+                                     <label for="email">Email: *<br/><input type="text"id="email"></label><br><br>
+                                     <label for="phone">Phone: *<br/><input type="text"id="phone"></label><br><br>
+                                      <label for="linkedin">LinkedIn Profile Link:<br/><input type="text"id="linkedin"></label><br><br>
+                                     <!-- <p>Address Information</p><br>
+                                      <label for="city">Current Location (City): *<br/><input type="text"id="city"></label><br><br> -->
+                                     <p>Professional Details</p><br>
+                                      <!-- <label for="emplyment">Employment Status: *</label><br>
+                                <select style="width:300px; height:30px" name="emplyment" id="emplyment">
+                                 <option value="none">None</option>
+                                     <option value="Employed">Employed</option>
+                                    <option value="UnEmployed">UnEmployed</option>
+                                    
+                                     </select><br><br> -->
+                                     <label for="linkedin">Experience in Years::<br/><input type="text"id="linkedin"></label><br><br>
+                                     <!-- <label for="github">Github Profile:<br/><input type="text"id="github"></label><br><br>
+                                     <p>Other Info</p><br> -->
+                                <!-- <label for="find">How did you find out about the position?: *:</label><br>
+                                        <select style="width:300px; height:30px" name="find" id="find">
+                                            <option value="none">None</option>
+                                             <option value="Male">LinkedIn</option>
+                                            <option value="Female">Hasjob</option>
+                                             <option value="Female">eLitmus</option>
+                                              <option value="Female">Angel.Co</option>
+                                               <option value="Female">Facebook</option>
+                                                <option value="Female">Amcat</option>
+                                                 <option value="Female">Friend</option>
+                                             <option value="Other">Other</option>
+                                     </select><br><br> -->
+                                     <p>Attachment Information</p><br>
+                                     <label>Resume: *<br/></label>
+                                    <input style="width:auto;height:auto;border:none" type="file" id="myFile" multiple size="50" onchange="myFunction()"><br/>
+                         <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </form>
+                  
+                </div>
+            </div>
+            <script>
+                function openFormMentor(){
+                    document.getElementById("myOverLay1").style.display="block";
+                }
+            </script>
+
+            <script>
+            function closeFormMentor(){
+                    document.getElementById("myOverLay1").style.display="none";
+                }
+            </script>
+            <script>
+function myFunction(){
+  var x = document.getElementById("myFile");
+  var txt = "";
+  if ('files' in x) {
+    if (x.files.length == 0) {
+      txt = "Select one or more files.";
+    } else {
+      for (var i = 0; i < x.files.length; i++) {
+        txt += "<br><strong>" + (i+1) + ". file</strong><br>";
+        var file = x.files[i];
+        if ('name' in file) {
+          txt += "name: " + file.name + "<br>";
+        }
+        if ('size' in file) {
+          txt += "size: " + file.size + " bytes <br>";
+        }
+      }
+    }
+  } 
+  else {
+    if (x.value == "") {
+      txt += "Select one or more files.";
+    } else {
+      txt += "The files property is not supported by your browser!";
+      txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead. 
+    }
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+                 
+  
+    </div>
+    
+    </body>
+</html>
